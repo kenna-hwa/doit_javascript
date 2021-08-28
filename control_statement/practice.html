@@ -129,8 +129,7 @@
             }
         }
         document.write(sum)
-        */
-
+       
         //1. 구구단 표시하기
 
         for(var i=1; i<10; i++){
@@ -151,6 +150,27 @@
             fact++;
         }
         document.write(number)
+ */
+
+        //Q1
+
+        var checkNum = prompt("이번 숫지는 짝수일까요 홀수일까요");
+        if(checkNum!=null){
+            if(checkNum % 2 == 0){
+                alert("짝수입니다.")
+            }else alert("홀수입니다.")
+        }
+        //Q2
+        var count = 0;
+        for(var c=1; c<=100; c++){
+            if(c%3==0){
+                count++
+                document.write(c+ ", ")
+            }
+
+        }
+        document.write("<br> 3의 배수의 개수: "+count)
+
     </script>
     
 </body>
