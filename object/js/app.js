@@ -42,7 +42,6 @@ let toyRobot={
 
 toyRobot.showStock();
 
-*/
 
 //생성자 함수
 function Book(author, pages, price, title){
@@ -54,3 +53,16 @@ function Book(author, pages, price, title){
 
 let hong = new Book("홍길동", "200", "30,000", "홍길동전")
 document.write(hong.author)
+*/
+function Book(title, author, volume, price) {
+    this.title = title;
+    this.author = author;
+    this.volume = volume;
+    this.price = price;
+}
+
+let oneBook = new Book("자바스크립트", "두잇", "ver1", "14,000")
+let twobook = new Book("파이썬", "돈두", "ver2", "11,000")
+let threebook = new Book("마크업", "돈잇", "ver3", "15,000")
+
+console.log(oneBook)
