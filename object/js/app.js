@@ -53,7 +53,8 @@ function Book(author, pages, price, title){
 
 let hong = new Book("홍길동", "200", "30,000", "홍길동전")
 document.write(hong.author)
-*/
+
+//객체 이용해 출력하기
 function Book(title, author, volume, price) {
     this.title = title;
     this.author = author;
@@ -62,7 +63,32 @@ function Book(title, author, volume, price) {
 }
 
 let oneBook = new Book("자바스크립트", "두잇", "ver1", "14,000")
-let twobook = new Book("파이썬", "돈두", "ver2", "11,000")
-let threebook = new Book("마크업", "돈잇", "ver3", "15,000")
+let twoBook = new Book("파이썬", "돈두", "ver2", "11,000")
+let threeBook = new Book("마크업", "돈잇", "ver3", "15,000")
 
-console.log(oneBook)
+console.log(twoBook)
+var bookList = [oneBook, twoBook, threeBook]
+
+document.write("<h1>책 내용으로 살펴보기</h1>")
+for(var i=0; i<bookList.length; i++){
+    document.write("<p>" + bookList[i].price + "</p>")
+}
+
+*/
+
+//기념일 계산기
+
+var date = new Date()
+
+document.write(date)
+document.write(date.getFullYear()+"<br>");
+document.write(date.getMonth()+1+"<br>");
+document.write(date.getDate()+"<br>");
+document.write(date.getDay()+"<br>");
+document.write(date.getTime()+"<br>");
+
+document.write(date.setDate(date.getDate()+50));
+document.write(date)
+
+var now = new Date();
+console.log(now.getMonth()+1)
