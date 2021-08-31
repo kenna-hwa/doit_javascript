@@ -73,4 +73,3 @@ var colors = ["red", "green", "blue", "white", "black"]
 
 console.log(colors.slice(2,4))
 
-// 여행 준비물 점검 프로그램

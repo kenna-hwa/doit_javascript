@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .add_wrapper{
+            width: 500px;
+            height: 50px;
+            background-color: grey;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 7px;
+            box-sizing: border-box;
+        }
+        #item{
+            width: 200px;
+            height: 30px;
+        }
+        #itemList{
+            text-align: left;
+            box-sizing: border-box;
+        }
+        ul{
+            padding: 0px;
+        }
+        li{
+            position: relative;
+            list-style: none;
+            width: 500px;
+            height: 50px;
+            margin: 0 auto;
+            padding: 14px;
+            box-sizing: border-box;
+        }
+        li:nth-child(2n){
+            background-color: #eee;
+        }
+        li:nth-child(2n-1){
+            background-color: #ccc;
+        }
+        span{
+            position: absolute;
+            display: inline-block;
+            right: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>여행 준비물 점검 목록</h2>
+    <div class="add_wrapper">
+        <form>
+            <input type="text" name="item" id="item" autofocus="true">
+            <button type="button" id="addBtn" class="addBtn">추가</button>
+        </form>
+    </div>
+    <div id="itemList">
+    </div>
+    <script src="js/index-result.js"></script>
+</body>
+</html>
