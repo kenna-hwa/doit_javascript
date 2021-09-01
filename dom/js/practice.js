@@ -1,1 +1,1 @@
-document.querySelector("#detail h3").style.visibility = 'hidden'
+document.querySelectorAll(".accent")[1].backgroundColor="yellow"

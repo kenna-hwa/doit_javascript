@@ -1,0 +1,1 @@
+document.querySelector("#prod-img > img").getAttribute("src")
