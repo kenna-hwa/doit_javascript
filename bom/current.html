@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cur = new Date();
+        var curHour = cur.getHours();
+        var curMinutes = cur.getMinutes();
+        var curSeconds = cur.getSeconds();
+        var curTxt; 
+        if(curHour < 12){
+            curTxt = "오전"
+            console.log(curTxt)
+        }else{
+            curTxt = "오후"
+            console.log(curTxt)
+        }
+
+        document.write(curTxt + " " + curHour + " : " + curMinutes + " : " + curSeconds)
+
+
+    </script>
+</body>
+</html>
+
