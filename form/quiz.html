@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container_one">
+        <h2>피자 주문</h2>
+        <form name="size">
+            <fieldset>
+                <legend>사이즈</legend>
+                <p>Large - <span>24000</span>원</p>
+            </fieldset>
+        </form>
+        <form name="order">
+            <fieldset>
+                <legend>추가 주문</legend>
+                <input type="checkbox" name="pickle" id="pickle" class="check" value="800"><label for="pickle">피클 800원</label>
+                <input type="checkbox" name="chilie" id="chilie" class="check" value="300"> <label for="chilie"> 칠리소스 300원</label>
+                <input type="checkbox" name="dipping" id="dipping" class="check" value="200"> <label for="dipping"> 디핑 200원</label>
+                <input type="checkbox" name="cheeze" id="cheeze" class="check" value="4800"> <label for="cheeze">치즈스틱 (4개, 4800원)</label> 
+                <input type="checkbox" name="corn" id="corn" class="check" value="2400">  <label for="corn">콘샐러드 2400원</label>
+            </fieldset>
+        </form>
+        <form name="total">
+            <fieldset>
+                <legend>합계</legend>
+                <input type="text" class="total" value="0">
+            </fieldset>
+        </form>
+    </div>
+    <div class="container_two">
+
+    </div>
+    <script src="./js/quiz.js"></script>
+</body>
+</html>
